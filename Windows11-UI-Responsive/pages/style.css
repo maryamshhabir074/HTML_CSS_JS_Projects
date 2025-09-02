@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+   overflow: hidden;
+   height: 100vh;
+}
+.taskbar{
+    background-color: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+}
+.right{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    height: 85%;
+    margin-top: 5px;
+}
+.startmenu{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+}
+.startmenu img{
+    height: 500px;
+    margin-top:45px ; 
+}
+.innner{
+    position: absolute;
+    bottom: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+.video{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    background-color: #0f0e0e;
+}
+
+
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; 
+    left: 5px;
+    width: 90px;
+    height: 100px;
+    user-select: none;
+}
+
+.desktop-icon img {
+    width: 70px;
+    margin: 10px 0 0 0; 
+    height: 39px;
+    object-fit: contain;
+}
+ .desktop-icon span {
+  white-space: nowrap; /* Prevent break between words */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  color: #f3f3f3;
+  margin-left: 8px;
+}
+
+/* Positioning for each icon */
+.desktop-icon {
+    top: 10px;
+}
+.edge-icon {
+    top: 100px; /* 10px + 70px (icon) + 8px (span) + margin, adjust as needed */
+}
+.recycle-icon {
+    top: 190px; /* 100px + 70px (icon) + 8px (span) + margin, adjust as needed */
+}
+
+
+
